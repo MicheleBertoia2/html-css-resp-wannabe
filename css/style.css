@@ -85,22 +85,6 @@ img {
     margin-bottom: 1rem;
 }
 
-@media screen and (max-width: 1140px) {
-    .lessons .container {
-        width: 95%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .lessons .row {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .lessons .col {
-        width: 100%;
-    }
-}
 
 /* STEPS SECTION */
 .steps {
@@ -124,6 +108,7 @@ img {
     margin-bottom: 1rem;
 }
 
+
 /* WHY US SECTION */
 .why-us {
     margin-bottom: 3rem;
@@ -141,6 +126,75 @@ img {
     margin-bottom: 2.5rem;
 }
 
+
 /************************************************
     SOLUZIONE RESPONSIVE
  ************************************************/
+
+/* LESSONS SECTION */
+
+ @media screen and (max-width: 1140px) {
+    .lessons .container {
+        width: 95%;
+    }
+
+    .lessons .col .card img {
+        max-height: 200px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lessons .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lessons .col {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1140px) {
+    .steps .container {
+        width: 95%;
+    }
+    .steps .col .card img {
+        max-height: 200px;
+    }
+}
+
+/* STEPS SECTION */
+
+@media screen and (max-width: 480px) {
+    .steps .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .steps .col {
+        width: 100%;
+    }
+}
+
+/* WHY-US SECTION */
+
+@media screen and (max-width: 1140px) {
+    .why-us .container {
+        width: 95%;
+    }
+    .why-us .col .card img {
+        max-height: 200px;
+    }
+}
+
+
+@media screen and (max-width: 480px) {
+    .why-us .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .why-us .col {
+        width: 100%;
+    }
+}
